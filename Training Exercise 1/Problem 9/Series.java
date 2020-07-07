@@ -55,7 +55,7 @@ class Series
 	}
 	public static void main(String args[])
 	{
-		System.out.println("Enter Small Letter alphabet.....");
+		System.out.println("Enter Small Letters of Alphabets.....");
 		Scanner s=new Scanner(System.in);
 
 		String text=s.nextLine();
