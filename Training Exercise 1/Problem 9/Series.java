@@ -45,7 +45,7 @@ class Series
 			else
 			{
 				if(occ==1)
-					System.out.println("Text is not valid");
+					System.out.println("Text is not valid!");
 			}
 
 			
