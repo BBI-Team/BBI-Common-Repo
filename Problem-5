@@ -1,0 +1,115 @@
+public class Course
+{
+	private String CourseName;
+	private String CourseID;
+	private String CourseCategory;
+	
+	public String getID()
+	{
+		return CourseID;
+	}
+	public void setID(String id)
+	{
+		this.CourseID=id;
+	}
+	
+	public String getName()
+	{
+		return CourseName;
+	}
+	public void setName(String name)
+	{
+		this.CourseName=name;
+	}
+	
+	public String getCategory()
+	{
+		return CourseCategory;
+	}
+	public void setCategory(String category)
+	{
+		this.CourseCategory=category;
+	}
+}
+
+CourseController
+public class CourseController
+{
+	private Course model;
+	private CourseView view;
+	
+	public CourseController(Course model, CourseView view)
+	{
+		this.model=model;
+		this.view=view;
+	}
+	
+	public void setCourseName(String name)
+	{
+		model.setName(name);
+	}
+	public String getCousreName()
+	{
+		return model.getName();
+	}
+	
+	public void setCourseID(String id)
+	{
+		model.setID(id);
+	}
+	public String getCousreID()
+	{
+		return model.getID();
+	}
+	
+	public void setCourseCategory(String category)
+	{
+		model.setCategory(category);
+	}
+	public String getCousreCategory()
+	{
+		return model.getCategory();
+	}
+	
+	public void updateView()
+	{
+		view.printCourseDetails(model.getName(), model.getID(), model.getCategory());
+	}
+}
+CourseView
+class CourseView
+{
+	public void printCourseDetails(String CourseName, String CourseID, String CourseCategory)
+	{
+		System.out.println("Course Details");
+		System.out.println("Course Name: "+CourseName);
+		System.out.println("Course ID: "+CourseID);
+		System.out.println("Course Category: "+CourseCategory);
+	}
+}
+MVCPattern
+public class MVCPattern
+{
+	public static void main(String args[])
+	{
+		Course model=retriveCouseFromDatabase();
+		
+		CourseView view=new CourseView();
+		
+		CourseController controller=new CourseController(model,view);
+		controller.updateView();
+		
+		controller.setCourseName("Python");
+		System.out.println("After updating, Curse details are as follows......");
+		controller.updateView();
+	}
+	
+	private static Course retriveCouseFromDatabase()
+	{
+		Course course=new Course();
+		course.setName("Java");
+		course.setID("01");
+		course.setCategory("Programming");
+		return course;
+	}
+}
