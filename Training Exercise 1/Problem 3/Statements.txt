@@ -1,0 +1,31 @@
+Statements:
+
+1.break statement:
+By using break, you can force immediate termination of a loop, bypassing the conditional expression and any remaining code in the body of the loop.
+•	 When a break statement is encountered inside a loop, the loop is terminated and program control resumes at the next statement following the loop.
+
+2.continue statement :
+There may be situation in which you might want to continue running the loop but stop processing the remainder of the code in its body for this particular iteration. In other words, sometimes it is useful to force an early iteration of a loop. The continue statement performs such an action.
+
+3.return statement 
+The return statement exits from the current method, and control flow returns to where the method was invoked
+
+Types:
+1. return statement that returns a value. To return a value, simply put the value (or an expression that calculates the value) after the return keyword.
+2. return statement that doesn't return a value. The data type of the returned value must match the type of the method's declared return value. When a method is declared void, use the form of return that doesn't return a value
+
+4   Loops
+•	while :
+A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement
+
+			
+ 
+
+
+
+
+
+
+
+
+
