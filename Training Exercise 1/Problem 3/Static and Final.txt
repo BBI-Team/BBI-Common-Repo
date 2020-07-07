@@ -1,0 +1,22 @@
+Static and Final classes and methods
+
+1.Static:
+•	Class:
+Java allows a class to be defined within another class. These are called Nested Classes. The class in which the nested class is defined is known as the Outer Class. 
+
+Unlike top level classes, Inner classes can be Static. Non-static nested classes are also known as Inner classes.An instance of an inner class cannot be created without an instance of the outer class. Therefore, an inner class instance can access all of the members of its outer class, without using a reference to the outer class instance.
+
+•	Methods :
+Static method in Java is a method which belongs to the class and not to the object. A static method can access only static data. It is a method which belongs to the class and not to the object(instance). A static method can access only static data. It cannot access non-static data (instance variables).
+•	A static method can call only other static methods and can not call a non-static method from it.
+•	A static method can be accessed directly by the class name and doesn’t need any object
+•	A static method cannot refer to "this" or "super" keywords in anyway
+
+
+2.Final
+•	Class :
+When a class is declared with final keyword, it is called a final class. A final class cannot be extended(inherited). 
+
+•	Method :
+When a method is declared with final keyword, it is called a final method. A final method cannot be overridden The Object class does this—a number of its methods are final. We must declare methods with final keyword for which we required to follow the same implementation throughout all the derived classes 
+
