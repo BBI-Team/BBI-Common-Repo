@@ -1,0 +1,36 @@
+Looping :-
+		In programming languages, loops are used to execute a set of instructions/functions repeatedly when some conditions become true. There are three types of loops in Java.
+
+				1.for loop
+				2.while loop
+				3.do-while loop
+
+	1.for loop: for loop provides a concise way of writing the loop structure. Unlike a while loop, a for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
+	
+	
+	2.while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+	
+	3.A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+	
+Break :-
+		The break statement can also be used to jump out of a loop.
+		for (int i = 0; i < 10; i++) 
+		{
+			if (i == 4) 
+			{
+				break;
+			}
+		  System.out.println(i);
+		}
+		
+Continue :-
+		The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop
+		for (int i = 0; i < 10; i++) 
+		{
+			if (i == 4) 
+			{
+			continue;
+			}
+		  System.out.println(i);
+		}
+		
