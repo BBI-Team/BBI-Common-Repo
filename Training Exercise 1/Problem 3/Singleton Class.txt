@@ -1,0 +1,27 @@
+Singleton Class:
+
+What is singleton class?
+      In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time.
+
+Where it is used?
+      A singleton should be used when managing access to a resource which is shared by the entire application, and it would be difficult to potentially have multiple instances of the same class.  
+
+The Singleton's purpose is to control object creation, limiting the number of objects to only one. Since there is only one Singleton instance, any instance fields of a Singleton will occur only once per class, just like static fields. Singletons often control access to resources, such as database connections or sockets.
+
+How to use singleton class?
+•	Make constructor as private.
+•	Make a private static instance (class-member) of this singleton class. But, DO NOT instantiate it.
+•	Write a static/factory method that checks the static instance member for null and creates the instance
+
+Why do we need singleton class in java?
+	In Java the Singleton pattern will ensure that there is only one instance of a class is created in the Java Virtual Machine. It is used to provide global point of access to the object. 
+	By restricting the instance creation of a class it saves memory space as now the object won't be created each time a new request is made. Instead, a single object will be used repeatedly
+
+When to use singleton class?
+	In terms of practical use Singleton patterns are used in logging, caches, thread pools, configuration settings, device driver objects.
+
+
+
+
+
+
