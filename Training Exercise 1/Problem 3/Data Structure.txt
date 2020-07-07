@@ -1,0 +1,60 @@
+Data Structure
+
+Map :
+A map is a data structure and its majorly used for fast look ups or searching data. It stores data in the form of key and value pairs where every key is unique. Each key here maps to a value and hence the name map ! Key and values could be almost of any data type.
+Map data type is ideal to use in look up type situations where there is an identifying value and an actual value that is represented by the identifying value.
+
+A few examples where the map data type can be used are:
+•	Student ID numbers and last names
+•	House numbers on a street and the number of pets in each house
+•	Postal codes and names of citie
+Characteristics of Map:
+•	The keys are unique.
+•	No duplicate keys are possible .
+•	Also known as an associative array because like an array, it is a collection of values, and not a single value like an Int or a String. Also, each unique key is associated with a value, making it an associative array.
+
+Methods and properties are:
+•	new Map() – creates the map.
+•	map.set(key, value) – stores the value by the key.
+•	map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.
+•	map.has(key) – returns true if the key exists, false otherwise.
+•	map.delete(key) – removes the value by the key.
+•	map.clear() – removes everything from the map.
+•	map.size – returns the current element count.
+
+Set :
+A Set is a special type collection of “set of values” (without keys), where each value may occur only once.
+
+Its main methods are:
+•	new Set(iterable) – creates the set, and if an iterable object is provided (usually an array), copies values from it into the set.
+•	set.add(value) – adds a value, returns the set itself.
+•	set.delete(value) – removes the value, returns true if value existed at the moment of the call, otherwise false.
+•	set.has(value) – returns true if the value exists in the set, otherwise false.
+•	set.clear() – removes everything from the set.
+•	set.size – is the elements count.
+
+List :
+When it comes to the list data structure, we should mention that it defines a sequential set of elements to which you can add new elements and remove or change existing ones .The list data structure typically has two very distinctive implementations array list and linked list .
+
+•	ArrayList :
+An ArrayList, or dynamically resizing array, allows you to have the benefits of an array while offering flexibility in size. You won’t run out of space in the ArrayList as its capacity will grow as you insert elements .
+Dynamic sized arrays in Java that implement List interface . Dynamic sized arrays in Java that implement List interface
+•	Linked List: 
+A  linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. 
+
+Why we need Linked List?
+Arrays can be used to store linear data of similar types, but arrays have the following limitations.
+1) The size of the arrays is fixed: So we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage.
+2) Inserting a new element in an array of elements is expensive because the room has to be created for the new elements and to create room existing elements have to be shifted.
+A linked list is represented by a pointer to the first node of the linked list. The first node is called the head. If the linked list is empty, then the value of the head is NULL.
+Each node in a list consists of at least two parts:
+1) data
+2) Pointer (Or Reference) to the next node
+In C, we can represent a node using structures. Below is an example of a linked list node with integer data.
+
+
+
+
+
+
+
