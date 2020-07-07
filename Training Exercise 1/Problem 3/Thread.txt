@@ -1,0 +1,37 @@
+Thread and its life cycle
+
+
+What is thread?
+ 	Thread is a -
+•	Facility to allow multiple activities within a single process
+•	Referred as lightweight process
+•	A thread is a series of executed statements
+•	Each thread has its own program counter, stack and local variables
+•	A thread is a nested sequence of method calls
+•	Its shares memory, files and per-process state
+
+Why we use Threads?
+•	To perform asynchronous or background processing
+•	Increases the responsiveness of GUI applications
+•	Take advantage of multiprocessor systems
+•	Simplify program logic when there are multiple independent entities
+
+Thread creation in Java
+Thread implementation in java can be achieved in two ways:
+1.	Extending the java.lang.Thread class
+2.	Implementing the java.lang.Runnable Interface.
+
+Thread Life cycle in Java
+•	The start method creates the system resources, necessary to run the thread, schedules the thread to run, and calls the thread’s run method.
+•	A thread becomes “Not Runnable” when one of these events occurs:
+•	If sleep method is invoked.
+•	The thread calls the wait method.
+•	The thread is blocking on I/O.
+•	A thread dies naturally when the run method exits.
+
+
+
+
+
+
+
