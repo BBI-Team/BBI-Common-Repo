@@ -1,0 +1,22 @@
+class Pancakes
+{
+  public ststic void flip(char panArr[])
+  {
+    char plate[]=new char[10];
+    for(int i=0;i<panArr.length;i++)
+    {
+      if(panArr[i]=='+')
+        plate[i]=panArr[i];
+      else if(panArr=='-')
+      {
+        panArr[i]='+';
+        plate[i]=panArr[i];
+      }
+      System.out.println(panArr[i]);
+    }
+  }
+  public static void main(String args[])
+{
+char panArr[]={'+','-','-','+','+','-','-'};
+flip(panArr);
+}
