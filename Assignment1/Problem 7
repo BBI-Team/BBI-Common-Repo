@@ -1,0 +1,68 @@
+class Humans
+{
+	String HP;
+	void beheviour()
+	{
+		System.out.println("behaviour of the human:");
+	}
+}
+Class Hero Extends Humans
+{
+	int lightAttack=10;
+	void hashighAttack()
+	{
+		String IQ="HighIQ";
+		if(HP=HP.equals(IQ))
+		{
+			lightAttack=5;
+			lightAttack=-1;
+		}
+		else
+		{
+			lightAttack=-1;
+		}
+	}
+}
+class Monster extends Humans
+{
+	int darkAttack=10;
+	void hasBigBody()
+	{
+		String Body="BigBody";
+		if(HP.equals(Body))
+		{
+			darkAttack=5;
+			darkAttack=-1;
+		}
+		else
+		{
+			darkAttack=-1;
+		}
+	}
+}
+class Inheritance
+{
+	System.out.println("Enter how many attempts");
+	int N=sc.nextLine();
+	for(int i=1;i<=N;i++)
+	{
+		Humans obj1=new Humans();
+		obj1.behaviour();
+		Hero obj2=new Hero();
+		obj2.hashighAttack();
+		Monster obj3=new Monster();
+		obj3.hasBigBody();
+	}
+	if(lightAttack>darkAttack)
+	{
+		System.out.println("Hero is Winner");
+	}
+	else if(lightAttack<darkAttack)
+	{
+		System.out.println("Monster is Winner");
+	}
+	else
+	{
+		System.out.println("Hero and Monster has same score:");
+	}
+}
