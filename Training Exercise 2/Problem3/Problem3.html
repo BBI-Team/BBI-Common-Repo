@@ -1,0 +1,36 @@
+<html>
+
+  <head>
+      <link rel="stylesheet" href="pb3.css">
+  </head>
+
+  <script src="validation.js"> </script>
+    
+  <form name="myForm"  action="#"  onsubmit="return validateForm()">
+    
+    
+    <h2> Form</h2>
+
+    <div class="row">
+        Full Name : <br>
+        <input type="text" name="name" id="">
+        <div class="error" id="nameError"></div>
+    </div>
+    <div class="row">
+        Email Address :<br>
+        <input type="text" name="email">
+        <div class="error" id="emailError"></div>
+    </div>
+    <div class="row">
+        Mobile Number : <br>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobileError"></div>
+    </div>
+   
+    
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>
