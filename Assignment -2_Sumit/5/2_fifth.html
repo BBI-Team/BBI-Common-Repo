@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Fifth Question Json Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+	body
+	{ 
+		background-color: #ffb45e;
+	}
+	#heading{
+		margin-left:-8px;
+		margin-top: -8px;
+		width: 1535px;
+		padding-top: 16px;
+		padding-bottom: 27px;
+		text-align: center;
+		background-color: hsl(180, 50%, 50%);
+	
+	}
+	.valform {
+    	padding-top: 20px;
+    	padding-bottom: 10px;
+       	padding-left: 600px;
+    	padding-right: 700px;
+    	color:#000000;
+    	font-family:  Arial, sans-serif;
+    	font-size: 19px;
+
+		}
+		#name,#email,#mob,#addrs{
+			width: 325px;
+			height: 35px;
+		}
+		#btn{
+			text-align: center;
+		}
+		#sub,#cal,#vw{
+			    background: linear-gradient(#67ae55, #578843);
+    			box-shadow: inset 0 1px 1px #a4e388;
+    			border-color: #3b6e22 #3b6e22 #2c5115;
+    			min-width: 150px;
+   				padding: 7px 20px;
+   				border: 1px solid;
+    			border-radius: 5px;
+    			color: #fff;
+    			letter-spacing: 1px;
+    			text-shadow: 0 1px 2px rgba(0,0,0,.5);
+		}
+		input
+		{
+			background-color: #f0ffff;
+
+		}
+		#vw{
+			margin-left: 700px;
+		}
+		.viewDetails{
+			text-align: center;
+			table-layout: auto;
+			border-collapse: collapse;
+			border:1px solid black;
+			width: 100%;
+			text-align: center;
+			display: none;
+		}
+		th,td{
+			border: 1px solid black;
+			width:200px;
+			text-align: center;
+		}
+		.brdr{
+			border: none;
+			text-align: left;
+		}
+</style>
+</head>	
+<body>
+
+	<div id="heading">
+		<h1>Storing And Retriving Data</h1>
+	</div>
+	<form  action="#" class="valform" name="Jsonfrm"  method="post">
+		<table >
+			<tr class="brdr">
+
+			<td class="brdr">Name:<input type="text" name="name1" id='name' placeholder="Enter Your Name"  required /><br><br></td></tr>
+			<tr class="brdr">
+			<td class="brdr">Address:<input type="text" name="address" id='addrs' placeholder="Enter Your Address"   required /><br><br></td></tr>
+		<tr class="brdr">
+			<td class="brdr">Email:<input type="text" name="email1" id='email' placeholder="Enter email address" required /><br><br></td></tr>
+		<tr class="brdr">
+			<td class="brdr">Mobile Number:<input type="text" name="mobno"  id='mob' placeholder="Enter Mobile Number" required/><br><br></td></tr>
+		<tr class="brdr">
+			<td id="btn" class="brdr"> 
+				<input type="button" name="submit" class="submitData" value="Submit" id='sub' />
+				<input type="reset" name="reset" style="margin-left: 20px;" id='cal' value="Reset"/>
+			</td></tr>
+		</table>
+
+	</form>
+	<input type="button" name="view"  id='vw' value="View Details" /></br></br>
+	<table class="viewDetails" >
+		<thead id>
+			<tr>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Email</th>
+				<th>Mobile Number</th>
+			</tr>
+		</thead>
+
+		<tbody class="actual_data">
+			
+		</tbody>
+	</table>
+
+<script>
+			
+	$(document).ready(function(){
+	var x= [];
+	$(".submitData").click(function(){
+		var name = document.Jsonfrm.name1.value; 
+			var add = document.Jsonfrm.address.value; 
+			var email = document.Jsonfrm.email1.value; 
+			var phone = document.Jsonfrm.mobno.value; 
+			//declaring and initializing object 
+			let jsonObj = {
+				jname:name,
+				jadd:add,
+				jemail:email,
+				jphone:phone
+			}
+			//json object data pushed to array
+			x.push(jsonObj);
+			jsonObj= null;
+			console.log(x)
+
+	});
+	$("#vw").click(function(){
+		var accepted_data='';
+		let value = x[x.length-1];
+		accepted_data +='<tr>';
+		accepted_data +='<td>'+ value.jname+'</td>';
+		accepted_data +='<td>'+ value.jadd+'</td>';
+		accepted_data +='<td>'+ value.jemail+'</td>';
+		accepted_data +='<td>'+ value.jphone+'</td>';
+		accepted_data +='</tr>';
+		$('.viewDetails').show();
+		$('.actual_data').append(accepted_data);
+		accepted_data = null;	
+		});
+	});
+
+</script>
+</body>
+</html>
