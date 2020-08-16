@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Validation of fields</title>
+
+<script type="text/javascript">
+//validation function
+function validationForm()
+{
+	//name validation
+ 	var name = document.validation.name1.value; 
+	 
+	if (name == "")   //Blank field validation of name                               
+    	{ 
+        	alert("Please enter your name."); 
+        	return false;        	 
+    	}
+    	else
+    	{ 
+		var letters = /^[A-Za-z\s]+$/;
+		if(name.match(letters)) //entered string validation charecters only
+		{               
+			//return true;
+		}
+		else
+		{
+			alert("Enter valied name e.g.FirstName MiddleName LastName");
+			return false;
+		}
+	}
+	//Email Validation
+	var email=document.validation.email1.value;
+
+	if (email == "") //Blank field validation of email                                  
+	{ 
+        	alert("Please enter your mail."); 
+        	return false;
+
+        	 
+    	} 
+	else
+	{    	
+		//Email format validation
+		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if(email.match(mailformat))
+		{
+			//return true;
+		}
+		else
+		{
+			alert("You have entered an invalid email address!");
+			return false;
+		}
+	}
+	//Mobile number validation
+	var phone = document.validation.mobno.value; 
+	
+	if (phone == "") //Blank field validation of phone                          
+    	{ 
+    		alert("Please enter your Phone Number"); 
+    		return false;
+    	}
+    	else
+    	{ 
+    		//digits accepted 0-9 only validation
+		var digits = /^[0-9]+$/;
+
+		if(phone.match(digits))
+		{               
+			//return true;
+		}
+		
+		else
+		{
+			alert("Enter valied Mobile Number!");
+			return false;
+		}
+	}
+	if(phone.length==10)//validation of length of mobile number
+    	{
+    		
+    		alert("Submited Successfully");
+    		return true;
+    	}
+    	else
+    	{
+    		alert("Only 10 Digits are accebtable");
+    		return false;
+    	}
+
+
+}	
+    
+	</script>
+
+<style type="text/css">
+	body
+	{ 
+		background-color: #3660f463;
+	}
+	#heading{
+		margin-left:-8px;
+		margin-top: -8px;
+		width: 1535px;
+		/*padding-right: 140px;*/
+		padding-top: 25px;
+		padding-bottom: 40px;
+		/*padding-left: 550px;*/
+		text-align: center;
+		background-color: grey;
+	
+	}
+	.valform {
+    	padding-top: 20px;
+    	padding-bottom: 50px;
+       	padding-left: 600px;
+    	padding-right: 700px;
+    	color:#000000;
+    	font-family:  Arial, sans-serif;
+    	font-size: 19px;
+
+		}
+		#name,#email,#mob{
+			width: 325px;
+			height: 35px;
+		}
+		#btn{
+			text-align: center;
+		}
+		#sub,#cal{
+			    background: linear-gradient(#67ae55, #578843);
+    			box-shadow: inset 0 1px 1px #a4e388;
+    			border-color: #3b6e22 #3b6e22 #2c5115;
+    			min-width: 150px;
+   				padding: 7px 20px;
+   				border: 1px solid;
+    			border-radius: 5px;
+    			color: #fff;
+    			letter-spacing: 1px;
+    			text-shadow: 0 1px 2px rgba(0,0,0,.5);
+		}
+
+	}
+</style>
+</head>
+<body>
+	
+	<div id="heading">
+		<h1>Validation of Fields</h1>
+	</div>
+	<form  action="#" class="valform" name="validation"  onsubmit="return validationForm();" method="post">
+		<table>
+			<tr>
+			<td>Name:<input type="text" name="name1" id='name' placeholder="Enter Your Name"  /><br><br></td></tr>
+		<tr>
+			<td>Email:<input type="text" name="email1" id='email' placeholder="Enter email address" /><br><br></td></tr>
+		<tr>
+			<td>Mobile Number:<input type="text" name="mobno"  id='mob' placeholder="Enter Mobile Number" /><br><br></td></tr>
+		<tr>
+			<td id="btn"> <input type="submit" name="submit" value="Submit" id='sub' />
+						<input type="reset" name="cancle" style="margin-left: 20px;" id='cal' value="Cancle"/></td></tr>
+		</table>
+	</form>
+	
+</body>
+</html>
