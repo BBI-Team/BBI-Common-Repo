@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@100&display=swap');
+
+
+*{
+		margin: 0px;
+		padding: 0;
+		box-sizing:border-box;
+}
+
+body{
+	background: #81c644;
+	font-family:'Josefin Sans', sans-serif;
+}
+.wrapper{
+	margin-top:5%;
+	margin-left:10%;
+	margin-right: 10%;
+	flex-wrap:wrap;
+	
+}
+.wrapper h1{
+	font-family:font-family: 'Allura', cursive;
+	font-size:52px;
+	margin-bottom:60px;
+	text-align:center
+	
+}
+.Team1{
+	margin-left:20px;
+	margin-bottom:20px;	
+	flex-wrap:wrap;
+}
+
+.Team2{
+	margin-left:20px;
+	margin-bottom:40%;
+    flex-wrap:wrap;	
+}
+
+
+.Team1 .Team_member{
+	background:#fff;
+	text-align: center;
+	float:left;
+	margin:5px;
+	margin-bottom:30px;
+	margin-left:20px;
+	width:300px;
+	padding:10px;
+	line-height:20px;
+	color:#8e8b8b;
+	position:relative;
+	
+}
+.Team2 .Team_member{
+	background:#fff;
+	text-align: center;
+	float:left;
+	margin:5px;
+	margin-bottom:50px;
+	margin-left:20px;
+	width:300px;
+	padding:10px;
+	line-height:20px;
+	color:#8e8b8b;
+	position:relative;
+	
+}
+.Team1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Team1.Team_member h3{
+	color:black;
+	font-size:26px;
+	margin-top:50px;
+	
+}
+
+.Team .Team_member p.role{
+	color:black;
+	font-size:12px;
+	text-transform:uppercase;
+	Margin:12px;
+}
+.team_img{
+	
+	width:100px;
+	height:100px;
+	boder-radiusder:50px;
+	position:absolute;
+	top:-50px;
+	left:50px;
+	transform:translatex(-50px%);
+	background:#fff;
+	
+}

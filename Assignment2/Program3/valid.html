@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #validation{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>App</h1>
+    <div class="">
+        <p id="validation"></p>
+    </div>
+    <form action="" id="sample_form">
+        <input type="text" id="input_name" placeholder="Name">
+        <input type="email" id="user_email" placeholder="email">
+        <input type="text" id="user_mobileno" placeholder="Mobileno">
+        <button id="button">Submit</button>
+
+    </form>
+    <script>
+        class ES6code{
+            validation(msg){
+                document.getElementById("validation").appendChild(document.createTextNode(msg));
+
+                setTimeout(function(){
+                    document.querySelector("#validation").remove();
+                },  100)
+            }
+        };
+
+        document.getElementById("sample_form").addEventListener("submit",function(){
+        const name = document.getElementById("input_name").value;
+        const email = document.getElementById("user_email").value;
+        const mobileno =document.getElementById("user_mobileno").value;
+        const vali = new ES6code();
+
+        if(name == "" ||email == ""){
+            vali.validation("name,email must be present");
+        }else if(name.length<5){
+            vali.validation("name must br more than 5 character");
+        }
+
+        if(email.indexOf("@")<=0){
+            vali.validation("@ symbol at grater than 0 position");
+            
+        }
+
+        if(mobileno=/[7-9]\d{9}/){
+            vali.validation("first number between 7 to 9 and contains 9 number");
+            return false;
+        }
+
+
+        if(email.charAt(email.length-4)!='.'){
+            vali.validation("position of .");
+            return false;
+
+        }
+
+        e.preventDefault();
+        });
+    </script>
+    
+    
+</body>
+</html>
