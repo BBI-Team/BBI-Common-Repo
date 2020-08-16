@@ -1,0 +1,25 @@
+.mydiv
+{
+	height: 550px;
+	width: 75%;
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 20px 30px 10px #888888;
+	background-color: rgb(218,255,253);
+}
+	
+p{
+	font-family: verdana;
+	font-size: 20px;
+ }
+ 
+ ul{
+	color: red;
+	font-weight: bold;
+	}
+	
+.warnings
+{ 
+	color: red;
+	font-weight: bold;
+}
