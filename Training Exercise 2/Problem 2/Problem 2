@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF=8">
+	
+	
+	<title>Responsive text</title>
+	<link rel="stylesheet" type="text/css" href="pb2.css">
+	</head>
+
+	<body>
+		<div class="outer">
+		 <section>
+		  <p>
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa. Ut wisi enim as minim ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+		  </p>
+		  
+		  
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa. Ut wisi enim as minim ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		  
+		  
+		  
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa. Ut wisi enim as minim ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</P>
+		  
+		  
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa. Ut wisi enim as minim ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		  
+		  
+		  
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa. Ut wisi enim as minim ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		  
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa. Ut wisi enim as minim ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		 </section>
+		 
+		</div>
+		
+		
+	</body>
+</html>
