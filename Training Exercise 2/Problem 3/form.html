@@ -1,0 +1,43 @@
+<html>
+
+  <head>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <script src="formValidate.js"> </script>
+    
+  <form name="contactForm"  action="#"  onsubmit="return validateForm()">
+    
+    
+    <h2>Application Form</h2>
+
+    <div class="row">
+        Full Name : <br>
+        <input type="text" name="name" id="">
+        <div class="error" id="namErr"></div>
+    </div>
+    <div class="row">
+        Email Address :<br>
+        <input type="text" name="email">
+        <div class="error" id="emErr"></div>
+    </div>
+    <div class="row">
+        Mobile Number : <br>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobErr"></div>
+    </div>
+   
+    <div class="row">
+        Gender  :<br>
+        <div class="form-inline" >
+            <input type="radio" name="gender" value="male"> male
+            <input type="radio" name="gender" value="female"> female
+        </div>
+        <div class="error" id="genErr"></div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>
