@@ -1,0 +1,19 @@
+.myDiv
+{
+    height: 500px;
+    width: 30%;
+    text-align: left;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: rgb(200, 242, 255);   
+  }
+
+ ul 
+   { 
+    color: red;
+   }
+.Warnings
+    {
+      color: red
+    }
