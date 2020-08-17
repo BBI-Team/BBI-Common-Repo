@@ -1,0 +1,36 @@
+
+			
+	$(document).ready(function(){
+	var x= [];
+	$(".submitData").click(function(){
+		var name = document.Jsonfrm.name1.value; 
+			var add = document.Jsonfrm.address.value; 
+			var email = document.Jsonfrm.email1.value; 
+			var phone = document.Jsonfrm.mobno.value; 
+			//declaring and initializing object 
+			let jsonObj = {
+				jname:name,
+				jadd:add,
+				jemail:email,
+				jphone:phone
+			}
+			//json object data pushed to array
+			x.push(jsonObj);
+			jsonObj= null;
+			console.log(x)
+
+	});
+	$("#vw").click(function(){
+		var accepted_data='';
+		let value = x[x.length-1];
+		accepted_data +='<tr>';
+		accepted_data +='<td>'+ value.jname+'</td>';
+		accepted_data +='<td>'+ value.jadd+'</td>';
+		accepted_data +='<td>'+ value.jemail+'</td>';
+		accepted_data +='<td>'+ value.jphone+'</td>';
+		accepted_data +='</tr>';
+		$('.viewDetails').show();
+		$('.actual_data').append(accepted_data);
+		accepted_data = null;	
+		});
+	});
