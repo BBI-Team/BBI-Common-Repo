@@ -1,0 +1,9 @@
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+        var randomColor="#"+Math.floor(Math.random()*16777215).toString(16);
+        $("span").html(randomColor);
+        $("#circle").css("background",randomColor);
+    });g
+});
