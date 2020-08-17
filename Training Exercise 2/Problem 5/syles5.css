@@ -1,0 +1,70 @@
+    body
+	{ 
+		background-color: whitesmoke;
+	}
+	#heading{
+		margin-left:-8px;
+		margin-top: -8px;
+		width: 1535px;
+		padding-top: 25px;
+		padding-bottom: 40px;
+		text-align: center;
+		background-color: hsl(332deg 17% 29%);
+		color: lightblue;
+	
+	}
+	.valform {
+    	padding-top: 20px;
+    	padding-bottom: 10px;
+       	padding-left: 600px;
+    	padding-right: 700px;
+    	color:#000000;
+    	font-family:  Arial, sans-serif;
+    	font-size: 19px;
+
+		}
+		#name,#email,#mob,#addrs{
+			width: 325px;
+			height: 35px;
+		}
+		#btn{
+			text-align: center;
+		}
+		#sub,#cal,#vw{
+			    background: linear-gradient(#67ae55, #578843);
+    			box-shadow: inset 0 1px 1px #a4e388;
+    			border-color: #3b6e22 #3b6e22 #2c5115;
+    			min-width: 150px;
+   				padding: 7px 20px;
+   				border: 1px solid;
+    			border-radius: 5px;
+    			color: #fff;
+    			letter-spacing: 1px;
+    			text-shadow: 0 1px 2px rgba(0,0,0,.5);
+		}
+		input
+		{
+			background-color: #F0FFFF;
+
+		}
+		#vw{
+			margin-left: 700px;
+		}
+		.viewDetails{
+			text-align: center;
+			table-layout: auto;
+			border-collapse: collapse;
+			border:1px solid black;
+			width: 100%;
+			text-align: center;
+			display: none;
+		}
+		th,td{
+			border: 1px solid black;
+			width:200px;
+			text-align: center;
+		}
+		.brdr{
+			border: none;
+			text-align: left;
+        }
