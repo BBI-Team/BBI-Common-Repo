@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Json Example</title>
+<link rel="stylesheet" href="styles5.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="formToJson.js"></script>
+</head>	
+<body>
+
+	<div id="heading">
+		<h1>Json Example For Storing And Retriving Data</h1>
+	</div>
+	<form  action="#" class="valform" name="Jsonfrm"  method="post">
+		<table >
+			<tr class="brdr">
+
+			<td class="brdr">Name:<input type="text" name="name1" id='name' placeholder="Enter Your Name"  required /><br><br></td></tr>
+			<tr class="brdr">
+			<td class="brdr">Address:<input type="text" name="address" id='addrs' placeholder="Enter Your Address"   required /><br><br></td></tr>
+		<tr class="brdr">
+			<td class="brdr">Email:<input type="text" name="email1" id='email' placeholder="Enter email address" required /><br><br></td></tr>
+		<tr class="brdr">
+			<td class="brdr">Mobile Number:<input type="text" name="mobno"  id='mob' placeholder="Enter Mobile Number" required/><br><br></td></tr>
+		<tr class="brdr">
+			<td id="btn" class="brdr"> 
+				<input type="button" name="submit" class="submitData" value="Submit" id='sub' />
+				<input type="reset" name="Cancel" style="margin-left: 20px;" id='cal' value="Cancel"/>
+			</td></tr>
+		</table>
+
+	</form>
+	<input type="button" name="view"  id='vw' value="View Details" /></br></br>
+	<table class="viewDetails" >
+		<thead id>
+			<tr>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Email</th>
+				<th>Mobile Number</th>
+			</tr>
+		</thead>
+
+		<tbody class="actual_data">
+			
+		</tbody>
+	</table>
+
+</body>
+</html>
